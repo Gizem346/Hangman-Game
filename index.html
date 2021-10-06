@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play hangman game">
+    <meta name="keywords" content="hangman, game, hangman game, Play, play hangman game">
+    <link rel="stylesheet" href="./style.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hangman</h1>
+            <p>Find the hidden word - Enter a letter</p>
+        </div>
+        <div class="main">
+            <div class="up">
+                <div class="draw">
+                    <svg height="250" width="300">
+                        <line x1="50" y1="0" x2="50" y2="500" style="stroke-width:4" />
+                        <line x1="0" y1="250" x2="100" y2="250" style="stroke-width:6" />
+                        <line x1="50" y1="0" x2="150" y2="0" style="stroke-width:6" />
+                        <line x1="150" y1="0" x2="150" y2="50" style="stroke-width:4" />
+                        <circle class="man" id="head" cx="150" cy="70" r="20" stroke-width="3" fill="#34495E" />
+                        <line  class="man"id="body" x1="150" y1="90" x2="150" y2="180" style="stroke-width:4" />
+                        <line  class="man"id="arm_right" x1="150" y1="135" x2="180" y2="105" style="stroke-width:4" />
+                        <line  class="man"id="arm_left" x1="150" y1="135" x2="120" y2="105" style="stroke-width:4" />
+                        <line  class="man"id="knee_right" x1="150" y1="178" x2="180" y2="210" style="stroke-width:4" />
+                        <line  class="man"id="knee_left" x1="150" y1="178" x2="120" y2="210" style="stroke-width:4" />
+                    </svg>
+                </div>
+                <div class="wrong">
+                    <p>wrong</p>
+                    <div class="wrong_words"></div>
+                </div>
+            </div>
+            <div class="word">
+            </div>
+        </div>
+        <div class="snackbar">You have already entered this letter</div>
+        <div class="confirm_box_lost">
+            <h3>Unfortunately you lost. :confused:</h3>
+            <p class="anounce">...the word was: </p>
+            <button class="refresh">Play Again</button>
+        </div>
+        <div class="confirm_box_win">
+            <h3>Congratulations! You won! :smiley:</h3>
+            <button class="refresh">Play Again</button>
+        </div>
+        <div class="container2"></div>
+    </div>
+    <script src="./myScript.js"></script>
+</body>
+</html>

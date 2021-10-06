@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 0.95vw;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    background-color: #34495E;
+    color: white;
+    overflow: hidden;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .container .header p {
+    margin-top: 1rem;
+  }
+  .container .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 45%;
+    margin-top: 5rem;
+  }
+  .container .main .up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrong {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    display: none;
+  }
+  .wrong p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .wrong_words {
+    font-size: 1.5rem;
+  }
+  .word {
+    font-size: 1.9rem;
+    margin-top: 3rem;
+  }
+  .letter {
+    display: inline-block;
+    border-bottom: 3px solid #2980B9;
+    width: 1rem;
+    padding: 0.6rem;
+    margin-left: 1rem;
+    text-align: center;
+    color: #34495E;
+  }
+  svg {
+    stroke: white;
+  }
+  .snackbar {
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 20%;
+    padding: 1rem 0;
+    background-color: #1A2835;
+    border-radius: 10px 10px 0 0;
+  }
+  .snackbar2 {
+    position: absolute;
+    display: block;
+    top: 100%;
+    width: 20%;
+    padding: 1rem 0;
+    background-color: #1A2835;
+    border-radius: 10px 10px 0 0;
+    -webkit-animation: moves alternate ease-in-out 3s;
+            animation: moves alternate ease-in-out 3s;
+  }
+  .man {
+    visibility: hidden;
+  }
+  .confirm_box_lost {
+    background-color: #2980B9;
+    width: 25%;
+    padding: 4rem 1rem 3rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 30%;
+    display: none;
+    z-index: 1;
+  }
+  .confirm_box_lost h3 {
+    margin-bottom: 1rem;
+  }
+  .confirm_box_lost button {
+    margin-top: 1rem;
+    padding: 1rem;
+    color: #6780C0;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .confirm_box_win {
+    background-color: #2980B9;
+    width: 25%;
+    padding: 4rem 1rem 3rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 30%;
+    display: none;
+    z-index: 1;
+  }
+  .confirm_box_win h3 {
+    margin-bottom: 1rem;
+  }
+  .confirm_box_win button {
+    margin-top: 1rem;
+    padding: 1rem;
+    color: #6780C0;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .container2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #243342;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+  @-webkit-keyframes moves {
+    0% {
+      top: 100%;
+    }
+    25% {
+      top: 95%;
+    }
+    50% {
+      top: 95%;
+    }
+    75% {
+      top: 95%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  @keyframes moves {
+    0% {
+      top: 100%;
+    }
+    25% {
+      top: 95%;
+    }
+    50% {
+      top: 95%;
+    }
+    75% {
+      top: 95%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
